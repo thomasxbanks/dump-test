@@ -27,17 +27,16 @@ _____
 ```
   01 mkdir new-project-name && cd $_
   02 git clone path/to/the/repo/ .
-  03 npm i
+  03 npm install
 ```
-1. `git clone` the repo
-1. `npm install` the dependencies
-1. `npm start` to fire up the express server once you have completed _Set up_ below
 
 ## Set-up
 1. Install the [ACF to REST API](http://github.com/airesvsg/acf-to-rest-api) plugin to WordPress
 1. Expose any custom post types to the API - `show_in_rest => true`
 1. Enable the __Gravity Forms__ API access (see screenshot below)
 1. Point your build at the right WordPress site - `const URI = 'http://yoursite.com'`
+1. `npm start` to fire up the ExpressJS server
+1. Navigate to `http://localhost:8080` (unless you've set a different port in your environment config) in your [favourite browser](https://www.google.co.uk/chrome/browser/features.html?brand=CHBD&gclid=CL_ejNaA_NMCFc687QodbPwM8Q&dclid=CI6Il9aA_NMCFYsx0wodP5AC5Q)
 
 ![gravity Forms API Settings](/_docs/gravity-forms-api-settings.png)
 
