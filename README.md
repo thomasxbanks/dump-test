@@ -38,30 +38,30 @@ but here are some easy-to-understand examples of how the code will look.
 ### Exposing custom post types
 ```php
 <?php
-    add_action( 'init', 'casestudy' );
+  add_action( 'init', 'casestudy' );
 
-    function casestudy() {
-        $args = array(
-            'public'       => true,
-            'show_in_rest' => true,
-            'label'        => 'Case Studies'
-        );
-        register_post_type( 'casestudy', $args );
-    }
+  function casestudy() {
+    $args = array(
+      'public'       => true,
+      'show_in_rest' => true,
+      'label'        => 'Case Studies'
+    );
+    register_post_type( 'casestudy', $args );
+  }
 ?>
 ```
 
 ### EJS template
 ```html
 <% for (post of posts) { %>
-    <article class="card">
-        <% if (post['_embedded']['wp:featuredmedia']) { %>
-            <img class="hero_image" src="<%- post['_embedded']['wp:featuredmedia'][0].source_url %>" alt="<%- post.title.rendered %>">
-        <% } %>
-        <h2><%- post.title.rendered %></h2>
-        <%- post.excerpt.rendered %>
-        <a href="/insights/<%- post.slug %>" class="button">Read more</a>
-    </article>
+  <article class="card">
+    <% if (post['_embedded']['wp:featuredmedia']) { %>
+      <img class="hero_image" src="<%- post['_embedded']['wp:featuredmedia'][0].source_url %>" alt="<%- post.title.rendered %>">
+    <% } %>
+    <h2><%- post.title.rendered %></h2>
+    <%- post.excerpt.rendered %>
+    <a href="/insights/<%- post.slug %>" class="button">Read more</a>
+  </article>
 <% } %>
 ```
 
@@ -69,21 +69,21 @@ but here are some easy-to-understand examples of how the code will look.
 ```js
 // route for our homepage
 router.get('/', function(req, res) {
-	Promise.all([functions.getPage(2), functions.getLatestPost()]).then(function(data) {
-		res.render('pages/home', {
-			post: data[0],
-			latestpost: data[1][0]
-		})
-	})
+  Promise.all([functions.getPage(2), functions.getLatestPost()]).then(function(data) {
+    res.render('pages/home', {
+      post: data[0],
+      latestpost: data[1][0]
+    })
+  })
 })
 ```
 
 ## WordPress API get
 ```js
 exports.getPosts = function(page_number) {
-	return wp.posts().perPage(9).page(page_number).embed().then(function(data) {
-		return data
-	})
+  return wp.posts().perPage(9).page(page_number).embed().then(function(data) {
+    return data
+  })
 }
 ```
 
