@@ -1,6 +1,6 @@
 # Cube3 Node/WordPress Boilerplate
 
-Using Node.js and eJS templating to generate static HTML from WordPress API > :shipit:
+Using Node.js and EJS templating to generate static HTML from WordPress API > :shipit:
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
