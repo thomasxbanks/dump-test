@@ -107,6 +107,8 @@ _____
 - [ ] Return posts based on meta-data, especially custom ACF meta-data
   - This would make things like `post.acf.is_featured` better. Currently bringing in all posts and only displaying the ones where `casestudy.acf.is_featured` is `true`
 - [ ] Get this POC working on a server :/
+- [ ] Look into fancy page transitions
+- [ ] Look into caching shared elements like the masthead and site footer
 - [ ] Look at integrating things like vue.js, third-party code, `Gulp`ing the stylesheet
 - [ ] Get Gravity Forms API working in ExpressJS to avoid using Axios or jQuery to AJAX the data
 - [ ] Look into using Node File System to write static files to the server.
