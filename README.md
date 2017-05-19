@@ -1,6 +1,6 @@
 # Cube3 Node/WordPress Boilerplate
 
-Using Node.js and EJS templating to generate static HTML from WordPress API > :shipit:
+Using Node.js and EJS templating to generate static HTML from WordPress API ~ :shipit:
 
 ## Table of Contents
 - [Requirements](#requirements)
@@ -132,7 +132,7 @@ _____
 ## Next steps
 - [ ] Sanitise response data into nicer variables
   - Replace `<%- post['_embedded']['wp:featuredmedia'][0].source_url %>` with something like `<%- post.hero_image.url %>`
-- [ ] Look into _only_ returning **useful** data from the API
+- [ ] Look into _only returning **useful**_ data from the API
 - [ ] Get custom **Options** pages from the CMS
 - [ ] `POST` to Gravity Forms
 - [ ] Deal with responses from Gravity Forms on return from `POST`
