@@ -2,6 +2,11 @@
 
 Using Node.js and EJS templating to generate static HTML from WordPress API > :shipit:
 
+## Table of Contents
+- [Requirements](#Requirements)
+- [Installation](#Installation)
+- [Set-up](#Set-up)
+
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
 - [WordPress >4.7](https://wordpress.org/news/2016/12/vaughan/) or [WP-API Plugin](https://github.com/WP-API/WP-API) (for WordPress <4.7)
