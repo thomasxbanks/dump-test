@@ -39,7 +39,7 @@ _____
 1. `npm start` to fire up the ExpressJS server
 1. Navigate to `http://localhost:8080` (unless you've set a different port in your environment config) in your [favourite browser](https://www.google.co.uk/chrome/browser/features.html?brand=CHBD&gclid=CL_ejNaA_NMCFc687QodbPwM8Q&dclid=CI6Il9aA_NMCFYsx0wodP5AC5Q)
 
-![gravity Forms API Settings](/_docs/gravity-forms-api-settings.png)
+![gravity Forms API Settings](/gravity-forms-api-settings.png)
 
 ## Commands
 - `npm start` - Boot up the server and watch for changes
