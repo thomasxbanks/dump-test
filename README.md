@@ -24,8 +24,8 @@ _____
 - [WordPress >4.7](https://wordpress.org/news/2016/12/vaughan/) or [WP-API Plugin](https://github.com/WP-API/WP-API) (for WordPress <4.7)
 
 ## Installation
-```js
-  01 git clone http://github.com/thomasxbanks/cube3-node-wordpress-boilerplate.git .
+```
+  01 git clone http://github.com/thomasxbanks/cube3-node-wordpress-boilerplate.git
   02 npm i
 ```
 1. `git clone` the repo
