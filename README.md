@@ -25,9 +25,9 @@ _____
 
 ## Installation
 ```
-  01 mkdir new-project-name && cd $_
-  02 git clone path/to/the/repo/ .
-  03 npm install
+  mkdir new-project-name && cd $_
+  git clone path/to/the/repo/ .
+  npm install
 ```
 
 ## Set-up
