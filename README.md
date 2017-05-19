@@ -4,6 +4,7 @@ Using Node.js to generate static HTML from WordPress CMS > :shipit:
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
+- [WordPress >4.7](https://wordpress.org/news/2016/12/vaughan/) or [WP-API Plugin](https://github.com/WP-API/WP-API) for WordPress <4.7
 
 ## Installation
 1. `git clone` the repo
