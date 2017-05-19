@@ -98,6 +98,8 @@ exports.getPosts = function(page_number) {
 _____
 
 ## Next steps
+- [ ] Sanitise response data into nicer variable
+  - Replace `<%- post['_embedded']['wp:featuredmedia'][0].source_url %>` with something like `<%- post.hero_image.url %>`
 - [ ] Get custom options pages from the CMS
 - [ ] `POST` to Gravity Forms
 - [ ] Deal with responses from Gravity Forms on return from `POST`
