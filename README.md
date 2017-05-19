@@ -4,7 +4,7 @@ Using Node.js to generate static HTML from WordPress CMS > :shipit:
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
-- [WordPress >4.7](https://wordpress.org/news/2016/12/vaughan/) or [WP-API Plugin](https://github.com/WP-API/WP-API) for WordPress <4.7
+- [WordPress >4.7](https://wordpress.org/news/2016/12/vaughan/) or [WP-API Plugin](https://github.com/WP-API/WP-API) (for WordPress <4.7)
 
 ## Installation
 1. `git clone` the repo
@@ -107,8 +107,15 @@ _____
 - [ ] Get this POC working on a server :/
 - [ ] Look at integrating things like vue.js, third-party code, `Gulp`ing the stylesheet
 - [ ] Get Gravity Forms API working in ExpressJS to avoid using Axios or jQuery to AJAX the data
+- [ ] Look into using Node File System to write static files to the server.
+  - Included in this is re-generating the static files when the API is updated by the CMS
 
 ## Bugs
 - [ ] Pagination for top-level pages breaks :cry:
   - :heavy_check_mark: `http://yoursite.com/blog/category/page/2`
   - :heavy_multiplication_x: `http://yoursite.com/blog/page/2`
+
+_____
+
+## Contribution
+Any recommendations on improvements/changes welcome.
