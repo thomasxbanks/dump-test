@@ -2,6 +2,9 @@
 
 Using Node.js to generate static HTML from WordPress CMS > :shipit:
 
+## Requirements
+- [Node.js](https://nodejs.org/en/)
+
 ## Installation
 1. `git clone` the repo
 1. `npm install` the dependencies
@@ -14,6 +17,10 @@ Using Node.js to generate static HTML from WordPress CMS > :shipit:
 1. Point your build at the right WordPress site - `const URI = 'http://yoursite.com'`
 
 ![gravity Forms API Settings](/_docs/gravity-forms-api-settings.png)
+
+## Commands
+- `npm start` - Boot up the server and watch for changes
+- `npm test` - Runs tests when/if any are put in
 
 ## Documentation
 - [Node.js](https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
