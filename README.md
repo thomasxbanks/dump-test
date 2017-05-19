@@ -64,7 +64,9 @@ but here are some easy-to-understand examples of how the code will look.
 <% for (post of posts) { %>
   <article class="card">
     <% if (post['_embedded']['wp:featuredmedia']) { %>
-      <img class="hero_image" src="<%- post['_embedded']['wp:featuredmedia'][0].source_url %>" alt="<%- post.title.rendered %>">
+      <img class="hero_image"
+           src="<%- post['_embedded']['wp:featuredmedia'][0].source_url %>"
+           alt="<%- post.title.rendered %>">
     <% } %>
     <h2><%- post.title.rendered %></h2>
     <%- post.excerpt.rendered %>
