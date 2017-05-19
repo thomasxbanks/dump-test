@@ -102,3 +102,5 @@ _____
 
 ## Bugs
 - [ ] Pagination for top-level pages breaks :cry:
+  - :heavy_check_mark: `http://yoursite.com/blog/category/page/2`
+  - :heavy_multiplication_x: `http://yoursite.com/blog/page/2`
