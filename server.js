@@ -8,6 +8,7 @@ var port = process.env.PORT || 8080
 const URI = 'http://blackops.dev'
 
 var WPAPI = require('wpapi')
+
 var wp = new WPAPI({
 	endpoint: URI + '/wp-json/'
 })

@@ -106,16 +106,10 @@ router.get('/insights', function(req, res) {
 	// console.log("RES APP SETTINGS - categories\n", res.app.settings['categories'])
 
 	Promise.all([functions.getPosts(1), functions.getFeaturedPosts()]).then(function(data) {
-		let featured = data[0].filter((post) => {
-			return post.acf.is_featured_primary_on_insights_landing
-		})
 
 		let pageData = {
-			isCategory: false,
-			isSearch: false,
 			categories: res.app.settings['categories'],
-			posts: data[0],
-			featuredposts: featured
+			posts: data[0]
 		}
 
 		// console.log("Data from promises\n", pageData)
