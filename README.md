@@ -57,14 +57,10 @@ but here are some easy-to-understand examples of how the code will look.
     <article class="card">
         <% if (post['_embedded']['wp:featuredmedia']) { %>
             <img class="hero_image" src="<%- post['_embedded']['wp:featuredmedia'][0].source_url %>" alt="<%- post.title.rendered %>">
-        <% } else { %>
-            <div class="hero_image themed"></div>
         <% } %>
-            <div class="inner">
-                <h2><%- post.title.rendered %></h2>
-                <%- post.excerpt.rendered %>
-                <a href="/insights/<%- post.slug %>" class="button">Read more</a>
-            </div>
+        <h2><%- post.title.rendered %></h2>
+        <%- post.excerpt.rendered %>
+        <a href="/insights/<%- post.slug %>" class="button">Read more</a>
     </article>
 <% } %>
 ```
@@ -74,11 +70,9 @@ but here are some easy-to-understand examples of how the code will look.
 // route for our homepage
 router.get('/', function(req, res) {
 	Promise.all([functions.getPage(2), functions.getLatestPost()]).then(function(data) {
-		console.info(data[0])
 		res.render('pages/home', {
 			post: data[0],
-			latestpost: data[1][0],
-			casestudies: data[2]
+			latestpost: data[1][0]
 		})
 	})
 })
@@ -96,8 +90,9 @@ exports.getPosts = function(page_number) {
 _____
 
 ## Next steps
-- [ ] Get custom options pages
+- [ ] Get custom options pages from the CMS
 - [ ] `POST` to Gravity Forms
+- [ ] Deal with responses from Gravity Forms on return from `POST`
 - [ ] Set up auth for continuous access to Gravity Forms
 - [ ] Return posts based on meta-data, especially custom ACF meta-data
   - This would make things like `post.acf.is_featured` better. Currently bringing in all posts and only displaying the ones where `casestudy.acf.is_featured` is `true`
