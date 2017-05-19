@@ -78,7 +78,7 @@ router.get('/', function(req, res) {
 })
 ```
 
-## WordPress API get
+### WordPress API get
 ```js
 exports.getPosts = function(page_number) {
   return wp.posts().perPage(9).page(page_number).embed().then(function(data) {
