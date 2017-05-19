@@ -6,7 +6,17 @@ Using Node.js and EJS templating to generate static HTML from WordPress API > :s
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Set-up](#set-up)
-
+- [Commands](#commands)
+- [Documentation](#doumentation)
+- [Go nuts!](#go-nuts)
+- [Example code](#example-code)
+ - [Exposing custom post types](#exposing-custom-post-types)
+ - [EJS template](#ejs-template)
+ - [Express Routing](#express-routing)
+ - [WordPress API GET request function](#wordpress-api-get-request-function)
+- [Next steps](#next-steps)
+- [Bugs](#bugs)
+- [Contribution](#contribution)
 _____
 
 ## Requirements
@@ -14,6 +24,10 @@ _____
 - [WordPress >4.7](https://wordpress.org/news/2016/12/vaughan/) or [WP-API Plugin](https://github.com/WP-API/WP-API) (for WordPress <4.7)
 
 ## Installation
+```js
+  01 git clone http://github.com/thomasxbanks/cube3-node-wordpress-boilerplate.git .
+  02 npm i
+```
 1. `git clone` the repo
 1. `npm install` the dependencies
 1. `npm start` to fire up the express server once you have completed _Set up_ below
@@ -95,7 +109,7 @@ router.get('/', function(req, res) {
 })
 ```
 
-### WordPress API get
+### WordPress API GET request function
 ```js
 exports.getPosts = function(page_number) {
   return wp.posts().perPage(9).page(page_number).embed().then(function(data) {
