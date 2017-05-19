@@ -1,0 +1,42 @@
+<%- contentFor('hero') %>
+	<div class="hero" style="background-image: url(<%- post.acf.hero_bg_image %>)">
+		<div class="inner">
+			<div class="content">
+				<h1 class="central-column"><%- post.title.rendered %></h1>
+			</div>
+		</div>
+	</div>
+
+	<%- contentFor('body') %>
+
+		<% for (content of post.acf.cs_flexible_content) { %>
+			<% if (content.acf_fc_layout === 'banner') { %>
+				<img style="width: 100%;" src="<%- content.image %>" alt="">
+				<% } %>
+
+					<% if (content.acf_fc_layout === 'text_content') { %>
+						<article class="page central-column">
+							<div class="inner">
+								<h1 class="casestudy-intro"><%- content.lead_paragraph %></h1>
+								<p>
+									<%- content.text %>
+								</p>
+							</div>
+						</article>
+						<% } %>
+
+							<% if (content.acf_fc_layout === 'quote') { %>
+								<article class="page central-column">
+									<div class="inner">
+										<h2><%- content.text %></h2>
+									</div>
+								</article>
+								<% } %>
+									<% if (content.acf_fc_layout === 'inline_image') { %>
+										<article class="page central-column">
+											<div class="inner">
+												<img style="display: block; width: 100%; margin: 0 auto;" src="<%- content.image %>" alt="">
+											</div>
+										</article>
+										<% } %>
+											<% } %>

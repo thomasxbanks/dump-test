@@ -1,0 +1,18 @@
+<aside class="meta">
+    <h6>Author</h6>
+    <img class="avatar" src="<%- post['_embedded'].author[0].avatar_urls[96] %>" alt="<%- post['_embedded'].author[0].name %>">
+    <%- post['_embedded'].author[0].name %>
+
+    <h6>Posted</h6>
+    <span class="material-icons" aria-hidden="true">date_range</span>
+    <%- meta.postdate %>
+
+    <h6>Read length</h6>
+    <span class="material-icons" aria-hidden="true">hourglass_empty</span>
+    <%- meta.readingtime %> mins
+
+    <% include ../../views/partials/social-share %>
+
+    <h6>Published in</h6>
+    <% include ../../views/partials/cat-flag %>
+</aside>

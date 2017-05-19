@@ -1,0 +1,21 @@
+<%- contentFor('hero') %>
+	<!-- This is left intentionally blank -->
+
+	<%- contentFor('body') %>
+		<div class="central-column">
+			<% for (post of posts) { %>
+				<article class="card" style="background-image: url(<%- post.acf.grid_cover_image %>);">
+					<div class="wrapper">
+						<div class="inner">
+							<div class="content">
+								<div class="reveal">
+                                    <h2><%- post.acf.grid_client_name %></h2>
+									<p><%- post.acf.grid_caption %></p>
+									<a href="/case-studies/<%- post.slug %>" class="button">Read their story</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<% } %>
+		</div>

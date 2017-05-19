@@ -1,0 +1,10 @@
+.card {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin: 1rem;
+}
+
+.card img {
+	width: 100%;
+}

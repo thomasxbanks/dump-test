@@ -1,0 +1,26 @@
+<%- contentFor('hero') %>
+<% if (post['_embedded']['wp:featuredmedia']) { %>
+<div class="hero" style="background-image: url(<%- post['_embedded']['wp:featuredmedia'][0].source_url %>)">
+	<% } else { %>
+	<div class="hero themed">
+<% } %>
+
+		<div class="inner">
+			<div class="content">
+				<h1 class="central-column"><%- post.title.rendered %></h1>
+			</div>
+		</div>
+	</div>
+
+	<%- contentFor('body') %>
+		<article class="page central-column grid">
+
+			<% include ../../views/partials/post-meta %>
+
+			<div class="inner with-aside">
+				<%- post.content.rendered %>
+			</div>
+
+		</article>
+
+		<% include ../../views/partials/related-posts %>
