@@ -64,7 +64,7 @@ _____
 ## Go nuts!
 Compatible [Plugins](http://v2.wp-api.org/guide/plugins/) on the WordPress.org Plugin Repository.
 
-<small>While WordPress REST API v2 is still in plugin form, most of these plugins use it as a dependency, as opposed to the core infrastructure introduced in WordPress 4.4, so make sure you have it installed and activated.</small>
+>While WordPress REST API v2 is still in plugin form, most of these plugins use it as a dependency, as opposed to the core infrastructure introduced in WordPress 4.4, so make sure you have it installed and activated.
 
 _____
 
