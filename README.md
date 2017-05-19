@@ -25,8 +25,9 @@ _____
 
 ## Installation
 ```
-  01 git clone http://github.com/thomasxbanks/cube3-node-wordpress-boilerplate.git
-  02 npm i
+  01 mkdir new-project-name && cd $_
+  02 git clone path/to/the/repo/ .
+  03 npm i
 ```
 1. `git clone` the repo
 1. `npm install` the dependencies
