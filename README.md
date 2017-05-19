@@ -17,6 +17,7 @@ Using Node.js and EJS templating to generate static HTML from WordPress API ~ :s
 - [Next steps](#next-steps)
 - [Bugs](#bugs)
 - [Contribution](#contribution)
+
 _____
 
 ## Requirements
