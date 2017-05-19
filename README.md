@@ -33,6 +33,7 @@ _____
 ## Set-up
 1. Install the [ACF to REST API](http://github.com/airesvsg/acf-to-rest-api) plugin to WordPress
 1. Expose any custom post types to the API - `show_in_rest => true`
+    a. Example is given below, or consult the [documentation](https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types/#registering-a-custom-post-type-with-rest-api-support)
 1. Enable the __Gravity Forms__ API access (see screenshot below)
 1. Point your build at the right WordPress site - `const URI = 'http://yoursite.com'`
 1. `npm start` to fire up the ExpressJS server
@@ -48,9 +49,10 @@ _____
 - [Node.js](https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [ExpressJS Server](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
 - [EJS](http://www.embeddedjs.com/) - EJS combines data and a template to produce HTML
-- [WordPress REST API Docs](http://v2.wp-api.org/) - Access your WordPress site's data through an easy-to-use HTTP REST API
+- [WordPress REST API Docs](https://developer.wordpress.org/rest-api/) - Access your WordPress site's data through an easy-to-use HTTP REST API
 - [wpapi](https://www.npmjs.com/package/wpapi#collection-pagination) - A WordPress REST API client for JavaScript
 - [ACF to REST API](http://github.com/airesvsg/acf-to-rest-api) - Exposes Advanced Custom Fields Endpoints in the WP REST API v2
+
 
 ## Go nuts!
 Compatible [Plugins](http://v2.wp-api.org/guide/plugins/) on the WordPress.org Plugin Repository.
